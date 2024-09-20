@@ -1,0 +1,104 @@
+/* Aplica un fondo de pantalla a toda la página */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://joseppons.com/formacion/wp-content/uploads/2020/11/servicios-salon-barberia.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor principal que incluye header, formulario y footer */
+  .gestor-clientes-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilos del encabezado */
+  header4 {
+    background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header4 h1 {
+    margin: 0;
+    font-size: 32px; /* Tamaño del texto del encabezado */
+    color: white;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para leer mejor el texto */
+    padding: 40px; /* Aumentado para mayor comodidad */
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+  }
+  
+  /* Estilos de los fieldsets */
+  fieldset {
+    border: none;
+    margin-bottom: 30px;
+    padding: 25px; /* Padding interno aumentado */
+    background-color: rgba(255, 255, 255); /* Fondo blanco con opacidad */
+    border-radius: 8px;
+  }
+  
+  legend {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 500; /* Peso de fuente más fuerte para el título de la sección */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555; /* Gris medio para el texto de los labels */
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px; /* Padding interno aumentado para mayor comodidad */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Bordes redondeados */
+    font-size: 16px;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del input */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave para enfoque */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Color de borde al enfocarse */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4); /* Sombra suave al enfocarse */
+  }
+  
+  button {
+    padding: 15px 30px;
+    background-color: #007bff; /* Azul profesional */
+    border: none;
+    border-radius: 6px; /* Bordes redondeados */
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul oscuro al pasar el ratón */
+    transform: scale(1.03); /* Efecto de aumento suave */
+  }
+  
+
+  

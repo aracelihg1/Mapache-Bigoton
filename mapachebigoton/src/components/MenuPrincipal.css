@@ -1,0 +1,119 @@
+/* MenuPrincipal.css */
+
+/* Aplica un fondo de pantalla a toda la página */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://joseppons.com/formacion/wp-content/uploads/2020/11/servicios-salon-barberia.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal que incluye header, panel y footer */
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos del encabezado */
+header3 {
+  background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  display: flex;
+  justify-content: flex-end; /* Alinea el botón al lado derecho */
+  align-items: center;
+  position: relative; /* Necesario para posicionar el h1 */
+}
+
+header3 h1 {
+  margin: 0;
+  font-size: 32px; /* Aumentar el tamaño del texto del encabezado */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente el h1 */
+  color: white;
+}
+/* Estilos del botón de Log Out */
+.logout-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 20px; /* Separación del margen derecho */
+  margin-left: auto; /* Empuja el botón hacia el lado derecho */
+}
+
+.logout-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Contenedor de botones del panel */
+.panel-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos de los botones */
+.panel-buttons button {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
+  border: none;
+  border-radius: 12px; /* Aumentar el radio de borde para botones más redondeados */
+  color: #000; /* Texto negro para contraste */
+  cursor: pointer;
+  font-size: 30px; /* Tamaño de fuente aumentado */
+  padding: 35px 80px; /* Tamaño de botón aumentado */
+  margin: 20px; /* Espacio entre botones */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.panel-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco más opaco al pasar el ratón */
+  transform: scale(1.1); /* Efecto de aumento más pronunciado al pasar el ratón */
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para la confirmación de cierre de sesión */
+.logout-confirmation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logout-confirmation p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.logout-confirmation button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

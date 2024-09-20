@@ -1,0 +1,125 @@
+/* CrearCuenta.css */
+
+/* Aplica un fondo de pantalla a toda la página */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://joseppons.com/formacion/wp-content/uploads/2020/11/servicios-salon-barberia.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor principal que incluye header, main y footer */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilos del encabezado */
+  .header2 {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    color: white;
+    padding: 30px; /* Aumentado para mejor presentación */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header2 h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white; /* Asegúrate de que el texto sea blanco */
+    position: relative; /* Para poder posicionarlo */
+    z-index: 2000; /* Asegúrate de que esté delante de otros elementos */
+}
+  
+  /* Contenido principal de la página */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos del contenedor del formulario */
+  .form-container {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para leer mejor el texto */
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    margin: 30px auto; /* Centra el contenedor vertical y horizontalmente */
+  }
+  
+  /* Estilos del encabezado del formulario */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos de las etiquetas */
+  label {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  /* Estilos de los campos de entrada */
+  input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Estilos del botón */
+  button {
+    padding: 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos del enlace de inicio de sesión */
+  p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos del pie de página */
+  .footer {
+    background-color: #000; /* Fondo negro */
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,150 @@
+/* ConsultaCitas.css */ 
+
+/* Aplica un fondo de pantalla a toda la página */ 
+body { 
+    margin: 0; 
+    padding: 0; 
+    background: url('https://joseppons.com/formacion/wp-content/uploads/2020/11/servicios-salon-barberia.jpeg') no-repeat center center fixed; 
+    background-size: cover; 
+    font-family: Arial, sans-serif; 
+} 
+
+/* Contenedor principal que incluye header, tabla y footer */ 
+.consulta-citas-container { 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    padding: 20px; 
+    padding-bottom: 60px; /* Espacio para el pie de página */ 
+} 
+
+/* Estilos del encabezado */ 
+header5 { 
+    background-color: #000; /* Fondo negro */ 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 2000; /* Asegúrate de que esté por encima del encabezado */
+} 
+
+header5 h1 { 
+    margin: 0; 
+    font-size: 32px; /* Tamaño del texto del encabezado */ 
+    color: white; /* Asegúrate de que el texto sea blanco */
+} 
+
+/* Estilos de la tabla de citas */ 
+.citas-table { 
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para leer mejor el texto */ 
+    padding: 20px; 
+    border-radius: 12px; 
+    margin: 80px auto; /* Espacio para el encabezado fijo */ 
+    width: 80%; 
+    max-width: 1200px; /* Ajusta el ancho según sea necesario */ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la tabla */ 
+} 
+
+.citas-table h2 { 
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #007bff; /* Línea inferior para el título */ 
+    padding-bottom: 10px; 
+} 
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+} 
+
+th, td { 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    text-align: left; 
+} 
+
+th { 
+    background-color: #f4f4f4; 
+    font-weight: bold; 
+} 
+
+tbody tr:nth-child(even) { 
+    background-color: #f9f9f9; /* Color de fondo para filas pares */ 
+} 
+
+/* Botones en la tabla */
+.citas-table button {
+    padding: 6px 15px; /* Reduce ligeramente el padding vertical */
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Mantén el margen derecho para separación */
+    vertical-align: middle; /* Alinea los botones en el medio verticalmente */
+    margin-top: -4px; /* Sube un poquito los botones */
+}
+
+/* Botón de Actualizar */
+.citas-table .boton-actualizar {
+    background-color: #ffc107;
+    color: black;
+    margin-right: 10px;
+    margin-top: -4px; /* Sube el botón un poco */
+}
+
+/* Botón de Eliminar */
+.citas-table .boton-eliminar {
+    background-color: #28a745;
+    color: white;
+    margin-right: 0;
+    margin-top: -4px; /* Sube el botón un poco */
+}
+
+/* Estilo de los botones en la tabla */
+.citas-table td button {
+    margin-right: 10px; /* Espacio entre los botones en la misma celda */
+} 
+
+/* Estilos del pie de página */ 
+footer { 
+    background-color: #000; /* Fondo negro */ 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header5 h1 {
+        font-size: 24px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+
+    .citas-table {
+        width: 95%; /* Aumenta el ancho en dispositivos pequeños */
+        margin: 60px auto; /* Ajusta el margen superior */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    th, td {
+        padding: 10px; /* Reduce el padding de las celdas */
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    .citas-table h2 {
+        font-size: 20px; /* Tamaño de título más pequeño */
+    }
+
+    /* Ajustes para botones */
+    .citas-table button {
+        font-size: 12px; /* Tamaño de fuente más pequeño para botones */
+        padding: 4px 10px; /* Reduce el tamaño del botón */
+    }
+}
