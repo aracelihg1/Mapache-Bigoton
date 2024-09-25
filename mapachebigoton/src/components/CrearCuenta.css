@@ -1,6 +1,5 @@
 /* CrearCuenta.css */
 
-/* Aplica un fondo de pantalla a toda la página */
 body {
     margin: 0;
     padding: 0;
@@ -9,18 +8,16 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  /* Contenedor principal que incluye header, main y footer */
   .page-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
   
-  /* Estilos del encabezado */
   .header2 {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.8); 
     color: white;
-    padding: 30px; /* Aumentado para mejor presentación */
+    padding: 30px; 
     text-align: center;
     position: sticky;
     top: 0;
@@ -31,9 +28,9 @@ body {
 .header2 h1 {
     margin: 0;
     font-size: 28px;
-    color: white; /* Asegúrate de que el texto sea blanco */
-    position: relative; /* Para poder posicionarlo */
-    z-index: 2000; /* Asegúrate de que esté delante de otros elementos */
+    color: white; 
+    position: relative; 
+    z-index: 2000; 
 }
   
   /* Contenido principal de la página */
@@ -46,11 +43,11 @@ body {
   
   /* Estilos del contenedor del formulario */
   .form-container {
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para leer mejor el texto */
+    background: rgba(255, 255, 255, 0.9); 
     padding: 40px;
     border-radius: 12px;
     width: 400px;
-    margin: 30px auto; /* Centra el contenedor vertical y horizontalmente */
+    margin: 30px auto; 
   }
   
   /* Estilos del encabezado del formulario */
@@ -117,7 +114,7 @@ body {
   
   /* Estilos del pie de página */
   .footer {
-    background-color: #000; /* Fondo negro */
+    background-color: #000;
     color: white;
     padding: 15px;
     text-align: center;
