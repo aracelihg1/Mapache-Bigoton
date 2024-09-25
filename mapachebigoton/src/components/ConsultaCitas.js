@@ -66,7 +66,7 @@ const ConsultaCitas = () => {
         <table>
           <thead>
             <tr>
-              <th>Personal</th> {/* Agregar columna de Personal */}
+              <th>Personal asignado</th> {/* Agregar columna de Personal */}
               <th>Nombre</th>
               <th>Descripción del Servicio</th>
               <th>Costo</th>
