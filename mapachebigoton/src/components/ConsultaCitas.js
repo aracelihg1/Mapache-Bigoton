@@ -67,7 +67,7 @@ const ConsultaCitas = () => {
           <thead>
             <tr>
               <th>Personal asignado</th> {/* Agregar columna de Personal */}
-              <th>Nombre</th>
+              <th>Nombre del cliente</th>
               <th>Descripción del Servicio</th>
               <th>Costo</th>
               <th>Fecha</th>
