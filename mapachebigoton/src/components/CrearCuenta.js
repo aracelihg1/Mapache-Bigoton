@@ -42,14 +42,13 @@ const CrearCuenta = ({ onSignup }) => {
     localStorage.setItem('userEmail', email.trim());
     localStorage.setItem('userPassword', password.trim());
 
-    // Mostrar SweetAlert de cuenta creada
     Swal.fire({
       icon: 'success',
       title: 'Cuenta Creada',
       text: 'Tu cuenta ha sido creada exitosamente.'
     });
 
-    // Llama a onSignup si es necesario
+
     if (onSignup) {
       onSignup(email, password);
     }

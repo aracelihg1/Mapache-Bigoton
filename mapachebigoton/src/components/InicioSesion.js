@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Swal from 'sweetalert2'; // Importa SweetAlert2
+import Swal from 'sweetalert2'; 
 import './InicioSesion.css';
 
 const InicioSesion = ({ onLogin, error }) => {
@@ -16,7 +16,7 @@ const InicioSesion = ({ onLogin, error }) => {
     if (email === storedEmail && localStorage.getItem('userPassword') === password) {
       onLogin(email, password);
     } else {
-      // Mostrar SweetAlert2 en caso de error
+     
       Swal.fire({
         icon: 'error',
         title: 'Credenciales incorrectas',

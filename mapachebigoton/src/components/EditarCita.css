@@ -1,4 +1,4 @@
-/* Aplica un fondo de pantalla a toda la página */
+/* EditarCita.css */
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0); 
     color: white;
     padding: 20px;
     text-align: center;
@@ -20,12 +20,12 @@ header {
   
   header h1 {
     margin: 0;
-    font-size: 32px; /* Tamaño del texto del encabezado */
+    font-size: 32px; 
     color: white;
   }
   
 
-/* Contenedor principal que incluye header, main y footer */
+/* Header, main y footer */
 .page-container {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ header {
 
 /* Estilos del encabezado */
 .header {
-    background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0); 
     color: white;
     padding: 20px;
     text-align: center;
@@ -46,7 +46,7 @@ header {
 
 .header h1 {
     margin: 0;
-    font-size: 32px; /* Tamaño del texto del encabezado */
+    font-size: 32px; 
 }
 
 /* Contenido principal de la página */
@@ -58,13 +58,13 @@ header {
 
 /* Estilos del contenedor del formulario */
 .form-container {
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
-    padding: 40px; /* Aumentado para mayor comodidad */
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 40px; 
     border-radius: 12px;
     margin: 30px auto;
     width: 80%;
     max-width: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilos del encabezado del formulario */
@@ -81,13 +81,13 @@ form {
     flex-direction: column;
 }
 
-/* Estilos de las etiquetas */
+/* Estilos de etiquetas */
 label {
     margin-bottom: 15px;
     font-size: 16px;
 }
 
-/* Estilos de los campos de entrada */
+/* Campos de entrada */
 input {
     width: 100%;
     padding: 15px;
@@ -97,14 +97,14 @@ input {
     font-size: 16px;
 }
 
-/* Estilos del combo box específico para EditarCita */
+/* Estilos del combobox para EditarCita */
 .edit-cita-select {
-    padding: 15px; /* Padding similar a los inputs */
+    padding: 15px; 
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
-    width: 100%; /* Asegura que el combo box ocupe el ancho completo */
+    width: 100%; 
 }
 
 /* Añadir efecto de enfoque */
@@ -135,32 +135,32 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Estilos del combo box específico para EditarCita */
+/* Estilos del combo box para EditarCita */
 .editar-cita-select {
-    padding: 15px; /* Padding similar a los inputs */
+    padding: 15px; 
     margin-top: 5px;
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 8px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    width: 100%; /* Asegura que el combo box ocupe el ancho completo */
-    background-color: white; /* Fondo blanco */
-    color: #333; /* Color del texto */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 16px;
+    width: 100%; 
+    background-color: white; 
+    color: #333; 
 }
 
-/* Añadir efecto de enfoque */
+/* Efecto de enfoque */
 .editar-cita-select:focus {
-    outline: none; /* Elimina el contorno por defecto */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul al hacer foco */
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
-/* Estilos para las opciones dentro del combo box */
+/* Estilos para las opciones*/
 .editar-cita-select option {
-    background-color: white; /* Fondo blanco para las opciones */
-    color: #333; /* Color del texto de las opciones */
+    background-color: white; 
+    color: #333; 
 }
 
-/* Añadir estilos específicos para la opción seleccionada */
+/* Estilos para opción seleccionada */
 .editar-cita-select option:disabled {
-    color: #999; /* Color gris para las opciones deshabilitadas */
+    color: #999; 
 }
 

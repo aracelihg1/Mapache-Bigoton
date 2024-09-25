@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Contenedor principal que incluye header, panel y footer */
+/* Header, panel y footer */
 .panel-container {
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ body {
 
 /* Estilos del encabezado */
 header3 {
-  background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+  background-color: rgba(0, 0, 0); 
   color: white;
   padding: 10px;
   position: sticky;
@@ -26,20 +26,20 @@ header3 {
   width: 100%;
   z-index: 2000;
   display: flex;
-  justify-content: flex-end; /* Alinea el botón al lado derecho */
+  justify-content: flex-end; 
   align-items: center;
-  position: relative; /* Necesario para posicionar el h1 */
+  position: relative; 
 }
 
 header3 h1 {
   margin: 0;
-  font-size: 32px; /* Aumentar el tamaño del texto del encabezado */
+  font-size: 32px; 
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente el h1 */
+  transform: translateX(-50%); 
   color: white;
 }
-/* Estilos del botón de Log Out */
+/* Botón de Log Out */
 .logout-button {
   background-color: transparent;
   border: 2px solid white;
@@ -49,8 +49,8 @@ header3 h1 {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s, color 0.3s;
-  margin-right: 20px; /* Separación del margen derecho */
-  margin-left: auto; /* Empuja el botón hacia el lado derecho */
+  margin-right: 20px; 
+  margin-left: auto; 
 }
 
 .logout-button:hover {
@@ -69,31 +69,30 @@ header3 h1 {
 
 /* Estilos de los botones */
 .panel-buttons button {
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con opacidad */
-  border: none;
-  border-radius: 12px; /* Aumentar el radio de borde para botones más redondeados */
-  color: #000; /* Texto negro para contraste */
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 12px; 
+  color: #000; 
   cursor: pointer;
-  font-size: 30px; /* Tamaño de fuente aumentado */
-  padding: 35px 80px; /* Tamaño de botón aumentado */
-  margin: 20px; /* Espacio entre botones */
+  font-size: 30px; 
+  padding: 35px 80px;
+  margin: 20px; 
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .panel-buttons button:hover {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco más opaco al pasar el ratón */
-  transform: scale(1.1); /* Efecto de aumento más pronunciado al pasar el ratón */
+  background-color: rgba(255, 255, 255, 0.9); 
+  transform: scale(1.1); 
 }
 
 /* Estilos del pie de página */
 footer {
-  background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+  background-color: rgba(0, 0, 0); 
   color: white;
   padding: 10px;
   text-align: center;
 }
 
-/* Estilos para la confirmación de cierre de sesión */
+/* Confirmación de cierre de sesión */
 .logout-confirmation {
   position: fixed;
   top: 50%;

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './GestorClientes.css';
-import { ToastContainer, toast } from 'react-toastify'; // Importa ToastContainer y toast
-import 'react-toastify/dist/ReactToastify.css'; // Importa estilos de Toast
-import Swal from 'sweetalert2'; // Importa SweetAlert2
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css'; 
+import Swal from 'sweetalert2'; 
 
 
 const GestorClientes = () => {
@@ -32,7 +32,7 @@ const GestorClientes = () => {
 
     const costo = parseFloat(servicio.costo);
     if (isNaN(costo) || costo <= 0) {
-      toast.error('Por favor ingrese un valor válido para el costo.'); // Mensaje de error
+      toast.error('Por favor ingrese un valor válido para el costo.');
       return;
     }
 
@@ -55,7 +55,7 @@ const GestorClientes = () => {
         setCita({ fecha: '', hora: '' });
         setPersonal('');
 
-        toast.success('Datos guardados exitosamente'); // Mensaje de éxito
+        toast.success('Datos guardados exitosamente'); 
       }
     });
   };
@@ -156,7 +156,7 @@ const GestorClientes = () => {
 
         <button type="submit">Guardar Datos</button>
       </form>
-      <ToastContainer /> {/* Asegúrate de que esté aquí */}
+      <ToastContainer /> 
     </div>
   );
 };

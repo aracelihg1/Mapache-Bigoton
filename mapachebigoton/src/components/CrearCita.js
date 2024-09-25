@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const CrearCita = () => {
   const [cliente, setCliente] = useState({ nombre: '', telefono: '' });
   const [servicio, setServicio] = useState({ descripcion: '', costo: '' });
   const [cita, setCita] = useState({ fecha: '', hora: '' });
-  const navigate = useNavigate(); // Inicializar useNavigate
-
+  const navigate = useNavigate(); 
   const handleChangeCliente = (e) => {
     setCliente({ ...cliente, [e.target.name]: e.target.value });
   };

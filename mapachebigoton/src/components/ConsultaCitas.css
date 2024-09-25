@@ -9,18 +9,18 @@ body {
     font-family: Arial, sans-serif; 
 } 
 
-/* Contenedor principal que incluye header, tabla y footer */ 
+
 .consulta-citas-container { 
     display: flex; 
     flex-direction: column; 
     min-height: 100vh; 
     padding: 20px; 
-    padding-bottom: 60px; /* Espacio para el pie de página */ 
+    padding-bottom: 60px; 
 } 
 
 /* Estilos del encabezado */ 
 header5 { 
-    background-color: #000; /* Fondo negro */ 
+    background-color: #000; 
     color: white; 
     padding: 20px; 
     text-align: center; 
@@ -28,31 +28,31 @@ header5 {
     top: 0; 
     left: 0; 
     width: 100%; 
-    z-index: 2000; /* Asegúrate de que esté por encima del encabezado */
+    z-index: 2000; 
 } 
 
 header5 h1 { 
     margin: 0; 
-    font-size: 32px; /* Tamaño del texto del encabezado */ 
-    color: white; /* Asegúrate de que el texto sea blanco */
+    font-size: 32px; 
+    color: white; 
 } 
 
 /* Estilos de la tabla de citas */ 
 .citas-table { 
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para leer mejor el texto */ 
+    background: rgba(255, 255, 255, 0.9); 
     padding: 20px; 
     border-radius: 12px; 
-    margin: 80px auto; /* Espacio para el encabezado fijo */ 
+    margin: 80px auto; 
     width: 110%; /* MODIFICAR*/ 
-    max-width: 1200px; /* Ajusta el ancho según sea necesario */ 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la tabla */ 
+    max-width: 1200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 } 
 
 .citas-table h2 { 
     font-size: 24px; 
     color: #333; 
     margin-bottom: 20px; 
-    border-bottom: 2px solid #007bff; /* Línea inferior para el título */ 
+    border-bottom: 2px solid #007bff; 
     padding-bottom: 10px; 
 } 
 
@@ -78,14 +78,14 @@ tbody tr:nth-child(even) {
 
 /* Botones en la tabla */
 .citas-table button {
-    padding: 6px 15px; /* Reduce ligeramente el padding vertical */
+    padding: 6px 15px; 
     font-size: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 10px; /* Mantén el margen derecho para separación */
-    vertical-align: middle; /* Alinea los botones en el medio verticalmente */
-    margin-top: -4px; /* Sube un poquito los botones */
+    margin-right: 10px; 
+    vertical-align: middle; 
+    margin-top: -4px; 
 }
 
 /* Botón de Actualizar */
@@ -93,7 +93,7 @@ tbody tr:nth-child(even) {
     background-color: #ffc107;
     color: black;
     margin-right: 10px;
-    margin-top: -4px; /* Sube el botón un poco */
+    margin-top: -4px; 
 }
 
 /* Botón de Eliminar */
@@ -101,17 +101,17 @@ tbody tr:nth-child(even) {
     background-color: #28a745;
     color: white;
     margin-right: 0;
-    margin-top: -4px; /* Sube el botón un poco */
+    margin-top: -4px; 
 }
 
 /* Estilo de los botones en la tabla */
 .citas-table td button {
-    margin-right: 10px; /* Espacio entre los botones en la misma celda */
+    margin-right: 10px;
 } 
 
 /* Estilos del pie de página */ 
 footer { 
-    background-color: #000; /* Fondo negro */ 
+    background-color: #000; 
     color: white; 
     padding: 15px; 
     text-align: center; 
@@ -124,27 +124,27 @@ footer {
 /* Estilos responsivos */
 @media (max-width: 768px) {
     header5 h1 {
-        font-size: 24px; /* Tamaño más pequeño en pantallas pequeñas */
+        font-size: 24px; 
     }
 
     .citas-table {
-        width: 95%; /* Aumenta el ancho en dispositivos pequeños */
-        margin: 60px auto; /* Ajusta el margen superior */
-        padding: 10px; /* Reduce el padding */
+        width: 95%; 
+        margin: 60px auto; 
+        padding: 10px; 
     }
 
     th, td {
-        padding: 10px; /* Reduce el padding de las celdas */
-        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 10px;
+        font-size: 14px; 
     }
 
     .citas-table h2 {
-        font-size: 20px; /* Tamaño de título más pequeño */
+        font-size: 20px; 
     }
 
     /* Ajustes para botones */
     .citas-table button {
-        font-size: 12px; /* Tamaño de fuente más pequeño para botones */
-        padding: 4px 10px; /* Reduce el tamaño del botón */
+        font-size: 12px;
+        padding: 4px 10px; 
     }
 }

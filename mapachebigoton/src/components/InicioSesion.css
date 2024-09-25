@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  /* Contenedor principal que incluye header, main y footer */
+  /* Header, main y footer */
   .page-container {
     display: flex;
     flex-direction: column;
@@ -18,9 +18,9 @@ body {
   
   /* Estilos del encabezado */
   .header {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    background-color: rgba(0, 0, 0, 0.8); 
     color: white;
-    padding: 30px; /* Aumentado para mejor presentación */
+    padding: 30px; 
     text-align: center;
     position: sticky;
     top: 0;
@@ -31,12 +31,12 @@ body {
 .header h1 {
     margin: 0;
     font-size: 28px;
-    color: white; /* Asegúrate de que el texto sea blanco */
-    position: relative; /* Para poder posicionarlo */
-    z-index: 2000; /* Asegúrate de que esté delante de otros elementos */
+    color: white; 
+    position: relative; 
+    z-index: 2000; 
 }
   
-  /* Contenido principal de la página */
+  /* Contenido principal */
   .main-content {
     flex: 0;
     display: flex;
@@ -44,16 +44,16 @@ body {
     align-items: center;
   }
   
-  /* Estilos del contenedor del formulario */
+  /* Contenedor del formulario */
   .form-container {
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para leer mejor el texto */
+    background: rgba(255, 255, 255, 0.9); 
     padding: 30px;
     border-radius: 12px;
     width: 400px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin: 0 auto;
   }
   
-  /* Estilos del encabezado del formulario */
+  /* Estilos del encabezado */
   h2 {
     text-align: center;
     color: #333;

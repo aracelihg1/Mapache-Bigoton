@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2'; // Importa SweetAlert2
+import Swal from 'sweetalert2'; 
 import './MenuPrincipal.css';
 
 const MenuPrincipal = ({ onLogout }) => {
