@@ -11,6 +11,7 @@ const EditarCita = () => {
   const [servicio, setServicio] = useState({ descripcion: '', costo: '' });
   const [fecha, setFecha] = useState('');
   const [hora, setHora] = useState('');
+  const [personal, setPersonal] = useState('');
 
   useEffect(() => {
     const citas = JSON.parse(localStorage.getItem('citas')) || [];
@@ -20,6 +21,7 @@ const EditarCita = () => {
       setServicio(citaSeleccionada.servicio);
       setFecha(citaSeleccionada.cita.fecha);
       setHora(citaSeleccionada.cita.hora);
+      setPersonal(citaSeleccionada.personal);
     }
   }, [index]);
 
@@ -44,6 +46,10 @@ const EditarCita = () => {
     }
   };
 
+  const handleChangePersonal = (e) => {
+    setPersonal(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -59,6 +65,7 @@ const EditarCita = () => {
           cliente,
           servicio: { ...servicio, costo: parseFloat(servicio.costo) },
           cita: { fecha, hora },
+          personal,
         };
 
         const citas = JSON.parse(localStorage.getItem('citas')) || [];
@@ -70,23 +77,44 @@ const EditarCita = () => {
         setServicio({ descripcion: '', costo: '' });
         setFecha('');
         setHora('');
+        setPersonal('');
       }
     });
   };
 
   return (
-    <div className="page-container">
-      <header className="header">
+    <div className="editar-cita-container">
+      <header className="editar-cita-header">
         <h1>Editar Cita</h1>
       </header>
-      <main className="main-content">
-        <div className="form-container">
-          <form onSubmit={handleSubmit}>
-            <fieldset>
-              <legend>Cliente</legend>
-              <label>
+      <main className="editar-cita-main">
+        <div className="editar-cita-form-container">
+          <form className="editar-cita-form" onSubmit={handleSubmit}>
+            {/* Sección de Personal */}
+            <fieldset className="editar-cita-fieldset">
+              <legend className="editar-cita-legend">Personal</legend>
+              <label className="editar-cita-label">
+                Personal que atenderá:
+                <select 
+                  className="editar-cita-select" 
+                  value={personal} 
+                  onChange={handleChangePersonal} 
+                  required
+                >
+                  <option value="">Seleccione un personal</option>
+                  <option value="Amado Francisco Méndez">Amado Francisco Méndez</option>
+                  <option value="Araceli Hernández García">Araceli Hernández García</option>
+                  <option value="Yahir Hernández Jiménez">Yahir Hernández Jiménez</option>
+                </select>
+              </label>
+            </fieldset>
+
+            <fieldset className="editar-cita-fieldset">
+              <legend className="editar-cita-legend">Cliente</legend>
+              <label className="editar-cita-label">
                 Nombre:
                 <input
+                  className="editar-cita-input"
                   type="text"
                   name="nombre"
                   value={cliente.nombre}
@@ -94,9 +122,10 @@ const EditarCita = () => {
                   required
                 />
               </label>
-              <label>
+              <label className="editar-cita-label">
                 Teléfono:
                 <input
+                  className="editar-cita-input"
                   type="tel"
                   name="telefono"
                   value={cliente.telefono}
@@ -106,11 +135,12 @@ const EditarCita = () => {
               </label>
             </fieldset>
 
-            <fieldset>
-              <legend>Servicio</legend>
-              <label>
+            <fieldset className="editar-cita-fieldset">
+              <legend className="editar-cita-legend">Servicio</legend>
+              <label className="editar-cita-label">
                 Descripción:
                 <input
+                  className="editar-cita-input"
                   type="text"
                   name="descripcion"
                   value={servicio.descripcion}
@@ -118,9 +148,10 @@ const EditarCita = () => {
                   required
                 />
               </label>
-              <label>
+              <label className="editar-cita-label">
                 Costo:
                 <input
+                  className="editar-cita-input"
                   type="number"
                   name="costo"
                   value={servicio.costo}
@@ -130,11 +161,12 @@ const EditarCita = () => {
               </label>
             </fieldset>
 
-            <fieldset>
-              <legend>Cita</legend>
-              <label>
+            <fieldset className="editar-cita-fieldset">
+              <legend className="editar-cita-legend">Cita</legend>
+              <label className="editar-cita-label">
                 Fecha:
                 <input
+                  className="editar-cita-input"
                   type="date"
                   name="fecha"
                   value={fecha}
@@ -142,9 +174,10 @@ const EditarCita = () => {
                   required
                 />
               </label>
-              <label>
+              <label className="editar-cita-label">
                 Hora:
                 <input
+                  className="editar-cita-input"
                   type="time"
                   name="hora"
                   value={hora}
@@ -154,7 +187,7 @@ const EditarCita = () => {
               </label>
             </fieldset>
 
-            <button type="submit">Guardar Cambios</button>
+            <button className="editar-cita-button" type="submit">Guardar Cambios</button>
           </form>
         </div>
       </main>

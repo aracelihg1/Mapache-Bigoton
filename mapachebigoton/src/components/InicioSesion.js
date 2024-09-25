@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2'; // Importa SweetAlert2
 import './InicioSesion.css';
 
 const InicioSesion = ({ onLogin, error }) => {
@@ -7,7 +8,7 @@ const InicioSesion = ({ onLogin, error }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Recuperar email del localStorage
     const storedEmail = localStorage.getItem('userEmail');
 
@@ -15,7 +16,13 @@ const InicioSesion = ({ onLogin, error }) => {
     if (email === storedEmail && localStorage.getItem('userPassword') === password) {
       onLogin(email, password);
     } else {
-      alert('Credenciales incorrectas');
+      // Mostrar SweetAlert2 en caso de error
+      Swal.fire({
+        icon: 'error',
+        title: 'Credenciales incorrectas',
+        text: 'Por favor, verifica tu correo electrónico y contraseña.',
+        confirmButtonText: 'Intentar de nuevo'
+      });
     }
   };
 

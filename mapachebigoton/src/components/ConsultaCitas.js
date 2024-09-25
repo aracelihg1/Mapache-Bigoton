@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 
 const ConsultaCitas = () => {
   const [citas, setCitas] = useState([]);
+  const [personal, setPersonal] = useState(''); // Personal que atenderá
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -38,18 +39,35 @@ const ConsultaCitas = () => {
     navigate(`/editar-cita/${index}`);
   };
 
+  // Función para manejar el cambio de personal seleccionado
+  const handlePersonalChange = (e) => {
+    setPersonal(e.target.value);
+  };
+
   return (
     <div className="consulta-citas-container">
       <header5>
         <h1>Consulta de Citas</h1>
       </header5>
+      
+      {/* Agregar personal*/}
+      <div className="personal-selection">
+        <label htmlFor="personal">Selecciona el Personal:</label>
+        <select id="personal" value={personal} onChange={handlePersonalChange}>
+          <option value="">Seleccione un personal</option>
+          <option value="Amado Francisco Méndez">Amado Francisco Méndez</option>
+          <option value="Araceli Hernández García">Araceli Hernández García</option>
+          <option value="Yahir Hernández Jiménez">Yahir Hernández Jiménez</option>
+        </select>
+      </div>
+
       <div className="citas-table">
         <h2>Datos de las Citas</h2>
         <table>
           <thead>
             <tr>
+              <th>Personal</th> {/* Agregar columna de Personal */}
               <th>Nombre</th>
-              <th>Teléfono</th>
               <th>Descripción del Servicio</th>
               <th>Costo</th>
               <th>Fecha</th>
@@ -60,8 +78,8 @@ const ConsultaCitas = () => {
           <tbody>
             {citas.map((cita, index) => (
               <tr key={index}>
+                <td>{cita.personal}</td> {/* Muestra el nombre del personal */}
                 <td>{cita.cliente.nombre}</td>
-                <td>{cita.cliente.telefono}</td>
                 <td>{cita.servicio.descripcion}</td>
                 <td>{cita.servicio.costo}</td>
                 <td>{cita.cita.fecha}</td>

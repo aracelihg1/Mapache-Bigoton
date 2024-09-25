@@ -43,7 +43,7 @@ header5 h1 {
     padding: 20px; 
     border-radius: 12px; 
     margin: 80px auto; /* Espacio para el encabezado fijo */ 
-    width: 80%; 
+    width: 110%; /* MODIFICAR*/ 
     max-width: 1200px; /* Ajusta el ancho según sea necesario */ 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la tabla */ 
 } 

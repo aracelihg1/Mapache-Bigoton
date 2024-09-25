@@ -7,6 +7,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    background-color: rgba(0, 0, 0); /* Fondo negro con opacidad */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px; /* Tamaño del texto del encabezado */
+    color: white;
+  }
+  
+
 /* Contenedor principal que incluye header, main y footer */
 .page-container {
     display: flex;
@@ -79,6 +97,22 @@ input {
     font-size: 16px;
 }
 
+/* Estilos del combo box específico para EditarCita */
+.edit-cita-select {
+    padding: 15px; /* Padding similar a los inputs */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%; /* Asegura que el combo box ocupe el ancho completo */
+}
+
+/* Añadir efecto de enfoque */
+.edit-cita-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 /* Estilos del botón */
 button {
     padding: 15px;
@@ -99,32 +133,34 @@ button:hover {
 /* Estilos del mensaje de éxito */
 .toast {
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos del pie de página */
-.footer {
-    background-color: #000; /* Fondo negro */
-    color: white;
-    padding: 15px;
-    text-align: center;
+/* Estilos del combo box específico para EditarCita */
+.editar-cita-select {
+    padding: 15px; /* Padding similar a los inputs */
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    width: 100%; /* Asegura que el combo box ocupe el ancho completo */
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Color del texto */
 }
 
-/* Estilos de enfoque */
-input:focus, button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+/* Añadir efecto de enfoque */
+.editar-cita-select:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul al hacer foco */
 }
 
-/* Responsividad */
-@media (max-width: 600px) {
-    .form-container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-    }
-
-    .header h1 {
-        font-size: 24px;
-    }
+/* Estilos para las opciones dentro del combo box */
+.editar-cita-select option {
+    background-color: white; /* Fondo blanco para las opciones */
+    color: #333; /* Color del texto de las opciones */
 }
+
+/* Añadir estilos específicos para la opción seleccionada */
+.editar-cita-select option:disabled {
+    color: #999; /* Color gris para las opciones deshabilitadas */
+}
+
