@@ -60,6 +60,9 @@ const GestorClientes = () => {
     });
   };
 
+  
+
+
   return (
     <div className="gestor-clientes-container">
       <header4>
@@ -72,7 +75,7 @@ const GestorClientes = () => {
             Personal que atenderá:
             <div className="custom-select">
               <select value={personal} onChange={handleChangePersonal} required>
-                <option value="">Seleccione un personal</option>
+                <option value="">Seleccione el personal</option>
                 <option value="Amado Francisco Méndez">Amado Francisco Méndez</option>
                 <option value="Araceli Hernández García">Araceli Hernández García</option>
                 <option value="Yahir Hernández Jiménez">Yahir Hernández Jiménez</option>
